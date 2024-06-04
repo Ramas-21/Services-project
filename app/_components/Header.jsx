@@ -11,6 +11,7 @@ const Header = () => {
           <h2 className="hover:scale-105 cursor-pointer">Home</h2>
           <h2 className="hover:scale-105 cursor-pointer">Services</h2>
           <h2 className="hover:scale-105 cursor-pointer">About Us</h2>
+          <h2 className="hover:scale-105 cursor-pointer">Contact Us</h2>
         </div>
       </div>
       <div>
