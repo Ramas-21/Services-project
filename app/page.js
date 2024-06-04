@@ -7,14 +7,22 @@ import Api from "./_services/Api";
 export default function Home() {
 
   const [categoryList, setCategoryList] = useState([]);
+  const [businessList, setBusinessList] = useState([]);
 
   useEffect(() => {
     getCategoryList()
+    getAllBusinessList()
   },[])
 
   const getCategoryList = () => {
     Api.getCategory().then(resp=>{
       setCategoryList(resp.categories)
+    })
+  }
+
+  const getAllBusinessList = () => {
+    Api.getAllBusinessList().then(resp=>{
+      setBusinessList(resp.businessLists)
     })
   }
 
