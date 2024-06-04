@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import CategoryList from "./_components/CategoryList";
 import Hero from "./_components/Hero";
 import Api from "./_services/Api";
+import BusinessList from "./_components/BusinessList";
 
 export default function Home() {
 
@@ -31,6 +32,7 @@ export default function Home() {
     <div>
       <Hero/>
       <CategoryList categoryList={categoryList}/>
+      <BusinessList businessList={businessList}/>
     </div>
   );
 }
