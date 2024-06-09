@@ -5,6 +5,7 @@ import Hero from "./_components/Hero";
 import Api from "./_services/Api";
 import BusinessList from "./_components/BusinessList";
 
+
 export default function Home() {
 
   const [categoryList, setCategoryList] = useState([]);
