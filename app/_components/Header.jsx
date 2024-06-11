@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 const Header = () => {
   const { data } = useSession();
@@ -23,9 +24,9 @@ const Header = () => {
       <div className="flex items-center gap-8">
         <Image src="/logo.png" alt="logo" width={80} height={60} />
         <div className="hidden md:flex items-center gap-6">
-          <h2 className="hover:scale-105 cursor-pointer">Home</h2>
-          <h2 className="hover:scale-105 cursor-pointer">Services</h2>
-          <h2 className="hover:scale-105 cursor-pointer">About Us</h2>
+          <Link href={'/'} className="hover:scale-105 cursor-pointer">Home</Link>
+          <Link href={'/search/category'} className="hover:scale-105 cursor-pointer">Services</Link>
+          <Link href={''} className="hover:scale-105 cursor-pointer">About Us</Link>
         </div>
       </div>
       <div>
