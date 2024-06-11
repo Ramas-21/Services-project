@@ -28,11 +28,6 @@ const Footer = () => {
                 About
               </a>
             </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact Us
-              </a>
-            </li>
           </ul>
         </div>
       </footer>
