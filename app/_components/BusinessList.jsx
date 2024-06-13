@@ -12,6 +12,7 @@ const BusinessList = ({ businessList }) => {
     if(contactPerson === 'Michael Ndumia') return 2;
     return 5; 
   }
+  
   return (
     <div className="mt-5">
       <h2 className="font-bold text-[15px]">Popular Service Providers</h2>
