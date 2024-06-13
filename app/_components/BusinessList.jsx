@@ -1,8 +1,17 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
+import StarRating from "./StarRating";
 
 const BusinessList = ({ businessList }) => {
+
+  const getRating = (contactPerson) =>{
+    if (contactPerson === 'John Smith') return 4;
+    if(contactPerson === 'Dadson Karani') return 3;
+    if(contactPerson === 'Kenneth masinde') return 2;
+    if(contactPerson === 'Michael Ndumia') return 2;
+    return 5; 
+  }
   return (
     <div className="mt-5">
       <h2 className="font-bold text-[15px]">Popular Service Providers</h2>
@@ -18,6 +27,7 @@ const BusinessList = ({ businessList }) => {
             />
             <div className="flex flex-col items-baseline p-2 gap-1">
                 <h2 className="p-1 bg-blue-100 text-primary rounded-full px-2 text-[12px]">{business.category.name}</h2>
+                <StarRating rating={getRating(business.contactPerson)}/>
                 <h2 className="text-[14px]">{business.contactPerson}</h2>
                 <h2 className="text-gray-400 text-sm">{business.address}</h2>
                 <Button className="rounded-lg mt-3">Book Now</Button>
