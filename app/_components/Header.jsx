@@ -20,13 +20,14 @@ const Header = () => {
     console.log(data);
   }, [data]);
   return (
-    <div className="p-3 shadow-md flex justify-between">
+    <div className="p-3 shadow-md flex justify-between bg-white sticky top-0 z-50">
       <div className="flex items-center gap-8">
         <Image src="/logo.png" alt="logo" width={80} height={60} />
         <div className="hidden md:flex items-center gap-6">
           <Link href={'/'} className="hover:scale-105 cursor-pointer">Home</Link>
           <Link href={'/search/category'} className="hover:scale-105 cursor-pointer">Services</Link>
           <Link href={''} className="hover:scale-105 cursor-pointer">About Us</Link>
+          <Link href={''} className="hover:scale-105 cursor-pointer">Contact Us</Link>
         </div>
       </div>
       <div>

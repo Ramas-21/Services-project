@@ -10,6 +10,7 @@ const BusinessList = ({ businessList }) => {
     if(contactPerson === 'Dadson Karani') return 3;
     if(contactPerson === 'Kenneth masinde') return 2;
     if(contactPerson === 'Michael Ndumia') return 2;
+    if(contactPerson === 'Cleaners Kenya') return 4;
     return 5; 
   }
   
