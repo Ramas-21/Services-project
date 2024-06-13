@@ -1,9 +1,12 @@
 'use client'
 import { useEffect, useState } from "react";
 import CategoryList from "./_components/CategoryList";
-import Hero from "./_components/Hero";
 import Api from "./_services/Api";
 import BusinessList from "./_components/BusinessList";
+import Hero3 from "./_components/Hero3";
+
+
+
 
 
 export default function Home() {
@@ -31,7 +34,7 @@ export default function Home() {
 
   return (
     <div>
-      <Hero/>
+      <Hero3/>
       <CategoryList categoryList={categoryList}/>
       <BusinessList businessList={businessList}/>
     </div>
