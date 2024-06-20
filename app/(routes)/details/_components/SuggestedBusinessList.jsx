@@ -5,6 +5,15 @@ import Api from "@/app/_services/Api";
 import Image from "next/image";
 import StarRating from "@/app/_components/StarRating";
 import Link from "next/link";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import BookingSection from "./BookingSection";
 
 const SuggestedBusinessList = ({ business }) => {
   const [businessList, setBusinessList] = useState([]);
@@ -30,10 +39,12 @@ const SuggestedBusinessList = ({ business }) => {
 
   return (
     <div className="md:pl-10">
-      <Button className="flex gap-2 w-full">
-        <NotebookPen />
-        Book Appointment
-      </Button>
+      <BookingSection>
+        <Button className="flex gap-2 w-full">
+          <NotebookPen />
+          Book Appointment
+        </Button>
+      </BookingSection>
       <div className="hidden md:block">
         <h2 className="font-bold text-md mt-3 mb-3 ">Similar Services</h2>
         <div>

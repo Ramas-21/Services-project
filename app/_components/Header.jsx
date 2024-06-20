@@ -27,7 +27,6 @@ const Header = () => {
           <Link href={'/'} className="hover:scale-105 cursor-pointer">Home</Link>
           <Link href={'/search/category'} className="hover:scale-105 cursor-pointer">Services</Link>
           <Link href={''} className="hover:scale-105 cursor-pointer">About Us</Link>
-          <Link href={''} className="hover:scale-105 cursor-pointer">Contact Us</Link>
         </div>
       </div>
       <div>
