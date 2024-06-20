@@ -57,10 +57,10 @@ const BookingSection = ({ children }) => {
                   className="rounded-md border"
                 />
               </div>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-3 gap-2">
                 <h2 className="my-5 font-bold">Select Time</h2>
                 {timeSlot.map((item, index) => (
-                  <Button key={index} variant="outline" className="border rounded-full p-2 px-2">
+                  <Button key={index} variant="outline" className="border rounded-full p-2 px-2 mt-5">
                     {item.time}
                   </Button>
                 ))}
