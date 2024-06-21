@@ -5,14 +5,6 @@ import Api from "@/app/_services/Api";
 import Image from "next/image";
 import StarRating from "@/app/_components/StarRating";
 import Link from "next/link";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 import BookingSection from "./BookingSection";
 
 const SuggestedBusinessList = ({ business }) => {
@@ -39,7 +31,7 @@ const SuggestedBusinessList = ({ business }) => {
 
   return (
     <div className="md:pl-10">
-      <BookingSection>
+      <BookingSection business={business}>
         <Button className="flex gap-2 w-full">
           <NotebookPen />
           Book a Service

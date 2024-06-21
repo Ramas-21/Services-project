@@ -95,4 +95,32 @@ const result = await request(DATABASE_URL, query);
   return result;
 }
 
-export default { getCategory, getAllBusinessList, getBusinessByCategory, getBusinessById };
+const createYourBooking = async (businessId,date,time,userEmail,userName) => {
+  const mutationQuery = gql`mutation createBooking {
+  createBooking(
+    data: {bookingStatus: Booked, businessList: {connect: {id: "`+businessId+`"}}, date: "`+date+`", time: "`+time+`", userEmail: "`+userEmail+`", userName: "`+userName+`"}
+  ) {
+    id
+  }
+  publishManyBookings(to: PUBLISHED) {
+    count
+  }
+}
+`
+const result = await request(DATABASE_URL, mutationQuery);
+  return result;
+}
+
+const DisabledTime = async (businessId, date) => {
+  const query = gql`query DisableAlreadyBookedDate {
+  bookings(where: {businessList: {id: "`+businessId+`"}, date: "`+date+`"}) {
+    date
+    time
+  }
+}`
+
+const result = await request(DATABASE_URL, query);
+  return result;
+}
+
+export default { getCategory, getAllBusinessList, getBusinessByCategory, getBusinessById, createYourBooking, DisabledTime };

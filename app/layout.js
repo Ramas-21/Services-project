@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import NextAuthSessionProvider from "./provider";
+import { Toaster } from "sonner";
 
 const inter = Outfit({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <NextAuthSessionProvider>
           <div className="mx-6 md:mx-16">
             <Header />
+            <Toaster />
             {children}
             <Footer />
           </div>
