@@ -19,7 +19,7 @@ const BookingSection = ({ children, business }) => {
   const [date, setDate] = useState(new Date());
   const [timeSlot, setTimeSlot] = useState([]);
   const [selectedTime, setSelectedTime] = useState();
-  const [bookedTime, setBookedTime] = useState();
+  const [bookedTime, setBookedTime] = useState([]);
   const {data} = useSession();
 
   useEffect(() => {
