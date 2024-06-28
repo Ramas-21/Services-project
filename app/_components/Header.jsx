@@ -26,7 +26,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-6">
           <Link href={'/'} className="hover:scale-105 cursor-pointer">Home</Link>
           <Link href={'/search/category'} className="hover:scale-105 cursor-pointer">Services</Link>
-          <Link href={''} className="hover:scale-105 cursor-pointer">About Us</Link>
+          <Link href={'/about'} className="hover:scale-105 cursor-pointer">About Us</Link>
         </div>
       </div>
       <div>
