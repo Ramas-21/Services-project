@@ -123,4 +123,24 @@ const result = await request(DATABASE_URL, query);
   return result;
 }
 
-export default { getCategory, getAllBusinessList, getBusinessByCategory, getBusinessById, createYourBooking, DisabledTime };
+const GetUserBookings = async (userEmail) => {
+  const query = gql`query GetUserBookings {
+    bookings(where: {userEmail: "`+userEmail+`"}) {
+      businessList {
+        name
+        images {
+          url
+        }
+        contactPerson
+        address
+      }
+      date
+      time
+    }
+  }`
+
+  const result = await request(DATABASE_URL, query);
+  return result;
+}
+
+export default { getCategory, getAllBusinessList, getBusinessByCategory, getBusinessById, createYourBooking, DisabledTime,  GetUserBookings };
