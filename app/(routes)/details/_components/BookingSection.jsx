@@ -53,7 +53,7 @@ const BookingSection = ({ children, business }) => {
   };
 
   const saveBooking = () => {
-    Api.createYourBooking(business.id, date, selectedTime, data.user.email, data.user.name)
+    Api.createYourBooking(business.id, moment(date).format('DD-MMM-YYYY'), selectedTime, data.user.email, data.user.name)
     .then(resp=>{
       console.log(resp)
       if(resp)
