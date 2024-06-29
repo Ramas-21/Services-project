@@ -34,7 +34,7 @@ const BookingSection = ({ children, business }) => {
   },[date])
 
   const AlreadyBooked = () => {
-    Api.DisabledTime(business.id, date)
+    Api.DisabledTime(business.id, moment(date).format('DD-MMM-YYYY'))
     .then(resp=>{
       console.log(resp)
       setBookedTime(resp.bookings)

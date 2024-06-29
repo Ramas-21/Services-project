@@ -125,7 +125,7 @@ const result = await request(DATABASE_URL, query);
 
 const GetUserBookings = async (userEmail) => {
   const query = gql`query GetUserBookings {
-    bookings(where: {userEmail: "`+userEmail+`"}) {
+    bookings(where: {userEmail: "`+userEmail+`"}, orderBy: publishedAt_DESC) {
       businessList {
         name
         images {
