@@ -34,7 +34,7 @@ const SuggestedBusinessList = ({ business }) => {
       <BookingSection business={business}>
         <Button className="flex gap-2 w-full">
           <NotebookPen />
-          Book a Service
+          Book Service
         </Button>
       </BookingSection>
       <div className="hidden md:block">

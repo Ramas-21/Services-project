@@ -18,6 +18,8 @@ import moment from 'moment';
 
 
 
+
+
 const BookingSection = ({ children, business }) => {
   const [date, setDate] = useState(new Date());
   const [timeSlot, setTimeSlot] = useState([]);
@@ -55,6 +57,7 @@ const BookingSection = ({ children, business }) => {
     setTimeSlot(timeList);
   };
 
+  
   const saveBooking = () => {
     Api.createYourBooking(business.id, moment(date).format('DD-MMM-YYYY'), selectedTime, data.user.email, data.user.name)
     .then(resp=>{
