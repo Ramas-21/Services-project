@@ -110,7 +110,7 @@ const BookingSection = ({ children, business }) => {
               <SheetClose asChild>
                 <div className="flex gap-5">
                     <Button>Cancel</Button>
-                    <Button disabled={!(selectedTime&&date)} onClick={()=>saveBooking()}>Book</Button>
+                    <Button disabled={!(selectedTime&&date)} onClick={()=>saveBooking()} className="bg-green-500">Book</Button>
                 </div>
               </SheetClose>
             </SheetFooter>

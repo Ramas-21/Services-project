@@ -6,8 +6,8 @@ const page = () => {
       <div className="flex flex-1 justify-start items-center flex-col gap-4">
         <h5 className="font-bold text-3xl">About Us</h5>
         <p className="capitalize text-xl text-gray-700">
-          Our mission is to deliver exceptional service and unmatched customer
-          satisfaction.
+          Our mission is to deliver <span className="text-green-500">exceptional service</span> and unmatched <span className="text-green-500">customer
+          satisfaction.</span>
         </p>
         <p className="text-center text-md text-gray-500">
           Welcome to your trusted partner for all home service needs. We have

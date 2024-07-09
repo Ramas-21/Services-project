@@ -27,7 +27,7 @@ const CategorySidebar = () => {
   return (
     <div>
       <h2 className="font-bold mb-3 text-md">Services</h2>
-      <div>
+      <div className="bg-green-500 p-5 rounded-md text-black">
         {categoryList.map((category, index) => (
           <Link href={'/search/'+category.name} key={index} className={`flex gap-2 p-3 border items-center rounded-lg mb-3 cursor-pointer hover:bg-blue-100 hover:shadow-md ${selectedCategory==category.name&&'border-primary bg-blue-100'}`}>
             <Image src={category.icon.url} alt="icon" width={30} height={30} />

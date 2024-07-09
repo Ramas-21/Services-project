@@ -16,7 +16,7 @@ const BusinessInfo = ({ business }) => {
         />
         <div className="flex justify-between items-center w-full">
           <div className="flex flex-col items-baseline gap-2">
-            <h2 className="bg-blue-100 rounded-full p-1 px-3 text-md">
+            <h2 className="bg-green-400 rounded-full p-1 px-3 text-md text-white">
               {business?.category?.name}
             </h2>
             <h2 className="flex gap-2 text-sm text-gray-500">

@@ -33,7 +33,7 @@ const BusinessList = ({ businessList }) => {
                   className="h-[120px] md:h-[200px] object-cover rounded-lg"
                 />
                 <div className="flex flex-col items-baseline p-2 gap-1">
-                  <h2 className="p-1 bg-blue-100 text-primary rounded-full px-2 text-[12px]">
+                  <h2 className="p-1 bg-green-400 text-white rounded-full px-2 text-[12px]">
                     {business.category.name}
                   </h2>
                   <StarRating rating={getRating(business.contactPerson)} />
