@@ -14,17 +14,17 @@ const Footer = () => {
             . All Rights Reserved.
           </span>
           <ul className="flex gap-3 mr-5">
-            <li>
-              <Facebook className="text-white cursor-pointer"/>
+            <li className="bg-white p-1 rounded-full">
+              <Facebook className="text-black cursor-pointer"/>
             </li>
-            <li>
-              <Instagram className="text-white cursor-pointer"/>
+            <li className="bg-white p-1 rounded-full">
+              <Instagram className="text-black cursor-pointer"/>
             </li>
-            <li>
-              <Linkedin className="text-white cursor-pointer"/>
+            <li className="bg-white p-1 rounded-full">
+              <Linkedin className="text-black cursor-pointer"/>
             </li>
-            <li>
-              <Twitter className="text-white cursor-pointer"/>
+            <li className="bg-white p-1 rounded-full">
+              <Twitter className="text-black cursor-pointer"/>
             </li>
           </ul>
         </div>
